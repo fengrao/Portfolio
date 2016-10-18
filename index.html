@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Feng's Portfolio</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Libs and Plugins CSS -->
+		<link rel="stylesheet" href="inc/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="inc/animations/css/animate.min.css">
+		<link rel="stylesheet" href="inc/font-awesome/css/font-awesome.min.css"> <!-- Font Icons -->
+		<link rel="stylesheet" href="inc/owl-carousel/css/owl.carousel.css">
+		<link rel="stylesheet" href="inc/owl-carousel/css/owl.theme.css">
+
+		<!-- Theme CSS -->
+        <link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/mobile.css">
+
+		<!-- Skin CSS -->
+		<link rel="stylesheet" href="css/skin/cool-gray.css">
+	</head>
+	<body data-spy="scroll" data-target="#main-navbar">
+		<div class="body">
+			<header id="header" class="header-main">
+                <!-- Begin Navbar -->
+                <nav id="main-navbar" class="navbar navbar-default navbar-fixed-top" role="navigation"> <!-- Classes: navbar-default, navbar-inverse, navbar-fixed-top, navbar-fixed-bottom, navbar-transparent. Note: If you use non-transparent navbar, set "height: 98px;" to #header -->
+                 	<div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </buttn>
+                        </div>
+	                    <!-- Collect the nav links, forms, and other content for toggling -->
+	                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	                        <ul class="nav navbar-nav navbar-right">
+	                            <li><a class="page-scroll" href="body"><h5>Home</h5></a></li>
+	                            <li><a class="page-scroll" href="#portfolio-section"><h5>Portfolio</h5></a></li>
+	                            <li><a class="page-scroll" href="#testimonial-section"><h5>Resume</h5></a></li>      
+	                            <!--<li><a class="page-scroll" href="#contact-section"><h5>Contact</h5></a></li>-->
+                        	</ul>
+                    	</div><!-- /.navbar-collapse -->
+                  	</div><!-- /.container -->
+                </nav>
+                <!-- End Navbar -->
+            </header>
+			
+        	<!-- Begin text carousel intro section -->
+            <section id="text-carousel-intro-section" class="parallax" data-stellar-background-ratio="0.5" style="background-image: url(img/slider-bg.jpg);">				
+				<div class="container">
+					<div class="caption text-center text-white" data-stellar-ratio="0.7">
+						<div id="owl-intro-text" class="owl-carousel">
+							<div class="item" >
+								<h1>Feng Rao</h1>
+								<br><br><br>
+								<p>Hello! I'm Feng Rao. I am a user experience designer and game designer. I aim at creating useful and usable solutions to existing social problems with innovative approaches as well as emerging technologies, thus bridging the gaps between technology, individual development, and social value.</p>
+                                <div class="extra-space-l"></div>
+								<a class="page-scroll" href="#portfolio-section" target="_blank" role="button">view more</a>
+							</div>
+						</div>
+					</div> <!-- /.caption -->
+				</div> <!-- /.container -->
+			</section>
+			<!-- End text carousel intro section -->
+
+
+			<!-- Begin Portfolio -->
+            <section id="portfolio-section" class="page bg-style1">
+            	<div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="portfolio">
+                                <!-- Begin page header-->
+                                <div class="page-header-wrapper">
+                                    <div class="container">
+                                        <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
+                                            <h2>My Works</h2>
+                                            <div class="devider"></div>
+                                            <p class="subtitle">Portfolio</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End page header-->
+                                <div class="portfoloi_content_area" >
+                                    <div class="portfolio_menu" id="filters">
+                                        <ul>
+                                            <li class="active_prot_menu"><a href="#porfolio_menu" data-filter="*">all</a></li>
+                                            <li><a href="#porfolio_menu" data-filter=".Games">Games</a></li>
+                                            <li><a href="#porfolio_menu" data-filter=".UXDesign" >UX design</a></li>
+                                            <!--<li><a href="#porfolio_menu" data-filter=".appsDevelopment">Visual Design</a></li>
+                                            <li><a href="#porfolio_menu" data-filter=".GraphicDesign">Creative Advertisement</a></li>-->
+                                        </ul>
+                                    </div>
+                                    <div class="portfolio_content">
+                                        <div class="row"  id="portfolio">
+                                            <div class="col-xs-12 col-sm-4 Games">
+                                                <div class="portfolio_single_content">
+                                                    <img src="img/portfolio/shadow.png" alt="title"/>
+                                                    <div>
+                                                        <a href="shadow.html">Shadow</a>
+                                                        <span>Games</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-4 UXDesign">
+                                                <div class="portfolio_single_content">
+                                                    <img src="img/portfolio/sysuwings.png" alt="title"/>
+                                                    <div>
+                                                        <a href="sysuwings.html">sysuwings</a>
+                                                        <span>UX Design</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End portfolio -->
+
+			<!-- Begin resume -->
+            <section id="testimonial-section" >
+                <div id="testimonial-trigger" class="testimonial text-white parallax" data-stellar-background-ratio="0.5" style="background-image: url(img/testimonial-bg.jpg);">
+                    <div class="cover"></div>
+                    <!-- Begin page header-->
+                    <div class="page-header-wrapper" >
+                        <div class="container">
+                            <div class="page-header text-center wow fadeInDown" data-wow-delay="0.4s">
+                                <h2>Resume</h2>
+                                <div class="devider" ></div>
+                                <div class="row">          
+			                        <ul>
+						                <li><i class="fa fa-map-marker fa-lg"></i>&nbsp&nbsp&nbsp Carnegie Mellon University</li>
+						                <br><br>
+								        <li><i class="fa fa-phone"></i>&nbsp&nbsp&nbsp (+1)412-983-0340</li>
+								        <br><br>
+						                <li><i class="fa fa-envelope"></i>&nbsp&nbsp&nbsp fengrao94@gmail.com</li>
+			                        </ul>                                           
+		                        </div> <!-- /.row --> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End page header-->
+                    <div class="container" >
+                        <div class="testimonial-inner center-block text-center">
+                            <div id="owl-testimonial" class="owl-carousel">
+                                <div class="item">
+                                    <blockquote>
+                                        <a class="btn btn-blank" href="https://drive.google.com/file/d/0B09JAT0woQITc3Z3eWFJWkprcUU/view?usp=sharing" target="_blank" role="button">Download Resume</a>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End testimonials -->
+
+            <a href="#" class="scrolltotop"><i class="fa fa-arrow-up"></i></a> <!-- Scroll to top button -->
+		</div>
+		        <!-- Plugins JS -->
+		<script src="inc/jquery/jquery-1.11.1.min.js"></script>
+		<script src="inc/bootstrap/js/bootstrap.min.js"></script>
+		<script src="inc/owl-carousel/js/owl.carousel.min.js"></script>
+		<script src="inc/stellar/js/jquery.stellar.min.js"></script>
+		<script src="inc/animations/js/wow.min.js"></script>
+        <script src="inc/waypoints.min.js"></script>
+		<script src="inc/isotope.pkgd.min.js"></script>
+		<script src="inc/classie.js"></script>
+		<script src="inc/jquery.easing.min.js"></script>
+		<script src="inc/jquery.counterup.min.js"></script>
+		<script src="inc/smoothscroll.js"></script>
+
+		<!-- Theme JS -->
+		<script src="js/theme.js"></script>
+    </body> 
+        
+            
+</html>
