@@ -28,7 +28,7 @@ body .body {
 	height: 100%;
 	left: 0px;
 	top: 0px;
-	background-color: rgba(0, 46, 82, 0.15);
+	background-color: rgba(0, 0, 0, 0.45);
 	padding: 20px;
 }
 .page {
@@ -1173,6 +1173,15 @@ p.text {
 	font-family: 'Lato',Arial, serif;
 	font-size: 16px;
 	color: #345;
+}
+.subTitle {
+	letter-spacing: 0px;
+	margin-bottom: 40px;
+    line-height: 1.6;
+	text-align: center;
+	font-family: 'Lato',Arial, serif;
+	font-size: 16px;
+	color: #ffffff;
 }
 
 p.quote {
