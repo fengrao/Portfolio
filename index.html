@@ -1,247 +1,332 @@
-<!doctype html>
-<html lang="en-US">
+<!DOCTYPE html>
+<html>
 	<head>
+		<title>Feng's Design</title>
 		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Feng's Portfolio</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- Libs and Plugins CSS -->
-		<link rel="stylesheet" href="inc/bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" href="inc/animations/css/animate.min.css">
-		<link rel="stylesheet" href="inc/font-awesome/css/font-awesome.min.css"> <!-- Font Icons -->
-		<link rel="stylesheet" href="inc/owl-carousel/css/owl.carousel.css">
-		<link rel="stylesheet" href="inc/owl-carousel/css/owl.theme.css">
-
-		<!-- Theme CSS -->
-        <link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/mobile.css">
-
-		<!-- Skin CSS -->
-		<link rel="stylesheet" href="css/skin/cool-gray.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<!-- Fonts-->
+		<link rel="stylesheet" type="text/css" href="assets/fonts/fontawesome/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/fonts/pe-icon/pe-icon.css">
+		<!-- Vendors-->
+		<link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/grid.css">
+		<link rel="stylesheet" type="text/css" href="assets/vendors/magnific-popup/magnific-popup.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/vendors/swiper/swiper.css">
+		<!-- App & fonts-->
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:400,700">
+		<link rel="stylesheet" type="text/css" id="app-stylesheet" href="assets/css/main.css"><!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<![endif]-->
 	</head>
-	<body data-spy="scroll" data-target="#main-navbar">
-		<div class="body">
-			<header id="header" class="header-main">
-                <!-- Begin Navbar -->
-                <nav id="main-navbar" class="navbar navbar-default navbar-fixed-top" role="navigation"> <!-- Classes: navbar-default, navbar-inverse, navbar-fixed-top, navbar-fixed-bottom, navbar-transparent. Note: If you use non-transparent navbar, set "height: 98px;" to #header -->
-                 	<div class="container">
-                    <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </buttn>
-                        </div>
-	                    <!-- Collect the nav links, forms, and other content for toggling -->
-	                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	                        <ul class="nav navbar-nav navbar-right">
-	                            <li><a class="page-scroll" href="body"><h5>Home</h5></a></li>
-	                            <li><a class="page-scroll" href="#text-carousel-intro-section"><h5>About</h5></a></li>      
-	                            <!--<li><a class="page-scroll" href="#contact-section"><h5>Contact</h5></a></li>-->
-                        	</ul>
-                    	</div><!-- /.navbar-collapse -->
-                  	</div><!-- /.container -->
-                </nav>
-                <!-- End Navbar -->
-            </header>
-            
+	
+	<body>
+		<div class="page-wrap" id="root">
+			
+			<!-- header -->
+			<header class="header header--fixed">
 
-			<!-- Begin Portfolio -->
-            <section id="portfolio-section" class="page bg-style1" style = "margin-top:30px">
-            	<div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="portfolio">
-                               
-                                <div class="portfoloi_content_area" >
-                                    <div class="portfolio_menu" id="filters">
-                                        <ul>
-                                            <li class="active_prot_menu"><a href="#porfolio_menu" data-filter="*">all</a></li>
-                                            <li><a href="#porfolio_menu" data-filter=".Games">Games</a></li>
-                                            <li><a href="#porfolio_menu" data-filter=".UXDesign" >UX design</a></li>
-                                            <li><a href="#porfolio_menu" data-filter=".Programming">Programming</a></li>
-                                            <li><a href="#porfolio_menu" data-filter=".VRAR">VR/AR</a></li>
-                                            <li><a href="#porfolio_menu" data-filter=".MothionDesign">Motion Design</a></li>
-                                            <li><a href="#porfolio_menu" data-filter=".GraphicDesign">Graphic Design</a></li>
-                                            
-                                        </ul>
-                                    </div>
-                                    <div class="portfolio_content">
-                                        <div class="row"  id="portfolio">
-                                            <div class="col-xs-12 col-sm-4 Games">
-                                                <div class="portfolio_single_content">
-                                                    <img src="img/portfolio/shadow.png" alt="title"/>
-                                                    <div>
-                                                        <a href="shadow.html">SHADOW</a>
-                                                        <span>Games</span>
-                                                    </div>
-                                                </div>
-                                            </div>
+				<div class="header__inner">
+					<div class="header__logo"><a href="index.html"></a></div>
+					<div class="navbar-toggle" id="fs-button">
+						<div class="navbar-icon"><span></span></div>
+					</div>
+				</div>
+				
+				<!-- fullscreenmenu__module -->
+				<div class="fullscreenmenu__module" trigger="#fs-button">
+					
+					<!-- overlay-menu -->
+					<nav class="overlay-menu">
+						
+						<!--  -->
+						<ul class="wil-menu-list">
+							<li class="current-menu-item"><a href="index.html">Home</a>
+							</li>
+							<li><a href="about.html">About</a>
+							</li>
+							<li><a href="work.html">Work</a>
+							</li>
+							<li><a href="blog.html">Blog</a>
+							</li>
+							<li><a href="contact.html">Contact</a>
+							</li>
+						</ul><!--  -->
+						
+					</nav><!-- End / overlay-menu -->
+					
+				</div><!-- End / fullscreenmenu__module -->
+				
+			</header><!-- End / header -->
+			
+			<!-- Content-->
+			<div class="wil-content">
+				
+				<!-- Section -->
+				<section class="awe-section">
+					<div class="container" align="center">
+						<div class="col-sm-12">
+						
+						<div class="col-sm-6">
+							<div  class="page-title__title" >
+								<h2>Hey there! I'm Feng :)</h2>
+								<p class="about__subtitle">I'm a <span style="color:#4284f4"> Game designer</span> and <span style="color: #4284f4"> UX designer </span>.
+								 I am currently a second year student in Entertainment Technology Center, <span style="color:#4284f4"> Carnegie Mellon University </span>. My interests are in the intersection of design and computer science. I'm passionate about <span style="color:#4284f4">game design</span>, <span style="color:#4284f4">HCI</span> and <span style="color:#4284f4">computer science</span>. I try to bridge the gaps between technologies and human, and work at designing engaging, inspiring and innovative experience for human.
+								</p>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<img src="assets/img/photo.png" width="328" style="position:relative;" alt="">
+						</div>
+						</div>
+					</div>
+				</section>
+				<!-- End / Section -->
+				
+				
+				<!-- Section -->
+				<section class="awe-section bg-gray">
+					<div class="container">
+<!-- 
+						<div class="button-group filters-button-group" align="center" style="margin-bottom: 60px">
+						  	<button class="md-btn is-checked" data-filter="*">ALL</button>
+						  	<button class="md-btn" data-filter=".UX">UX</button>
+						  	<button class="md-btn" data-filter=".Games">Games</button>
+						  	<button class="md-btn" data-filter=".Programming">Programming</button>
+						</div> -->
 
-                                            <div class="col-xs-12 col-sm-4 Games Programming">
-                                                <div class="portfolio_single_content">
-                                                    <img src="img/portfolio/bouncingBulletWar.PNG" alt="title"/>
-                                                    <div>
-                                                        <a href="bouncingBulletWar.html">Bouncing Bullet War</a>
-                                                        <span>Games/ Programming</span>
-                                                    </div>
-                                                </div>
-                                            </div>
+						
+						<div class="grid" align="center">
+							<div class="grid-css grid-css--masonry"  data-col-lg="3" data-col-md="2" data-col-sm="2" data-col-xs="1" data-gap="30">
+								<div class="grid-item element-item UX Games" data-category="UX" >
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper" style="margin: 10px 10px 10px 10px;  " >
+											<!-- work -->
+											<div class="work portfolio_single_content">
+												<a href="NetEase.html">
+													<!-- hoverbox ef-slide-bottom -->
+													<div class="hoverbox ef-slide-bottom light">
+														<!-- hb_front -->
+														<div class="hb_front" style="background-color: #fff;">
+															<img src="assets/img/portfolioCover/netease.png" alt=""/>
+															
+														</div><!-- End / hb_front -->
+														<!-- hb_back -->
+														<div class="hb_back" style="background-image: url();">
+															<p class="work__text" align="left">As Experience Design Intern, I worked on two projects: Onmyoji and an unannounced project</p>
+														</div><!-- End / hb_back -->
+														
+													</div><!-- End / hoverbox ef-slide-bottom -->
+												</a>
+												<div style=" padding:  15px; " class="bg-gray">
+													<div style="margin: 0px 0px 5px 0px">NetEase Games Internship</div>
+													<span class="work__text" style="color: #aaa; word-wrap: break-word;">VR & Game UX Design</span>
+												</div>
+											</div><!-- End / work -->
+										</div>
+									</div>
+								</div>
 
-                                            <div class="col-xs-12 col-sm-4 Games MothionDesign">
-                                                <div class="portfolio_single_content">
-                                                    <img src="img/portfolio/dontLookAway.png" alt="title"/>
-                                                    <div>
-                                                        <a href="dontLookAway.html">Don't Look Away</a>
-                                                        <span>Games/MothionDesign</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="col-xs-12 col-sm-4 Games UXDesign VRAR">
-                                                <div class="portfolio_single_content">
-                                                    <img src="img/portfolio/theWait.png" alt="title"/>
-                                                    <div>
-                                                        <a href="theWait.html">The Wait</a>
-                                                        <span>Games/UX Design</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-4 Games Programming VRAR">
-                                                <div class="portfolio_single_content">
-                                                    <img src="img/portfolio/pots.PNG" alt="title"/>
-                                                    <div>
-                                                        <a href="pots.html">Pots</a>
-                                                        <span>Games/ Programming</span>
-                                                    </div>
-                                                </div>
-                                            </div>
+								<div class="grid-item element-item UX Games" data-category="UX" >
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper" style="margin: 10px 10px 10px 10px; " >
+											<!-- work -->
+											<div class="work portfolio_single_content">
+												<a href="roboRepair.html">
+													<!-- hoverbox ef-slide-bottom -->
+													<div class="hoverbox ef-slide-bottom light">
+														<!-- hb_front -->
+														<div class="hb_front" style="background-color: #fff;">
+															<img src="assets/img/portfolioCover/roboRepair.png" alt=""/>
+															
+														</div><!-- End / hb_front -->
+														<!-- hb_back -->
+														<div class="hb_back" style="background-image: url();">
+															<p class="work__text" align="left">A math educational game aiming to help K-12 students understand addition and subtraction</p>
+														</div><!-- End / hb_back -->
+														
+													</div><!-- End / hoverbox ef-slide-bottom -->
+												</a>
+												<div style=" padding:  15px 15px 25px 15px; " class="bg-gray">
+													<div style="margin: 0px 0px 5px 0px">Robo Repair</div>
+													<span class="work__text" style="color: #aaa; word-wrap: break-word;">Math Educational Game for K-12 </span>
+												</div>
+											</div><!-- End / work -->
+										</div>
+									</div>
+								</div>
 
-                                            <div class="col-xs-12 col-sm-4 Games">
-                                                <div class="portfolio_single_content">
-                                                    <img src="img/portfolio/crowdSurfer.png" alt="title"/>
-                                                    <div>
-                                                        <a href="crowdSurfer.html">Crowd Surfer</a>
-                                                        <span>Games</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-4 Games UXDesign MothionDesign">
-                                                <div class="portfolio_single_content">
-                                                    <img src="img/portfolio/reefRush.png" alt="title"/>
-                                                    <div>
-                                                        <a href="reefRush.html">Reef Rush</a>
-                                                        <span>Games/UX Design/MothionDesign</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-4 Games UXDesign">
-                                                <div class="portfolio_single_content">
-                                                    <img src="img/portfolio/theWorldHD.png" alt="title"/>
-                                                    <div>
-                                                        <a href="theWorldHD.html">The World HD</a>
-                                                        <span>Games/UX Design</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="col-xs-12 col-sm-4 UXDesign Games VRAR">
-                                                <div class="portfolio_single_content">
-                                                    <img src="img/portfolio/dive.png" alt="title"/>
-                                                    <div>
-                                                        <a href="dive.html">DIVE</a>
-                                                        <span>Games/UX Design</span>
-                                                    </div>
-                                                </div>
-                                            </div>
 
-                                            <div class="col-xs-12 col-sm-4 UXDesign">
-                                                <div class="portfolio_single_content">
-                                                    <img src="img/portfolio/sysuwings.png" alt="title"/>
-                                                    <div>
-                                                        <a href="sysuwings.html">SYSUWINGS</a>
-                                                        <span>UX Design</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-4 GraphicDesign">
-                                                <div class="portfolio_single_content">
-                                                    <img src="img/portfolio/sunshine.png" alt="title"/>
-                                                    <div>
-                                                        <a href="sunshine.html">Afternoon Sunshine</a>
-                                                        <span>Graphic Design</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- End portfolio -->
-            <hr>
-            <section id="text-carousel-intro-section">
-                <div class="text-center" >
-                    <div class="item text-center">
-                        <div class ="col-sm-12" style="margin-top: 300px">
-                            <img src="img/FengPortrait.png" height="200" width="200">
-                            <h2>Feng Rao</h2>
-                            <div class="devider" ></div>
-                        </div>
-                        <div class ="col-sm-12">
-                            <div class ="col-sm-3"></div>
-                            <div class ="col-sm-6">
-                                <p style="font-family: Arial; font-size: 16px; line-height: 30px; letter-spacing: 1px; text-align: center;">Hello! I'm Feng Rao. I am currently a first year student in Entertainment Technology Center, Carnegie Mellon University. I'm passionate about human computer interaction, user experience design and game design. I work at designing engaging, inspiring and innovative experience. I always try to create better experience for people to enjoy.</p>
-                            </div>
-                            <div class ="col-sm-3"></div> 
-                        </div>                                  
-                    </div>
+								<div class="grid-item element-item UX Games" data-category="UX" >
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper" style="margin: 10px 10px 10px 10px; " >
+											<!-- work -->
+											<div class="work portfolio_single_content">
+												<a href="bvw.html">
+													<!-- hoverbox ef-slide-bottom -->
+													<div class="hoverbox ef-slide-bottom light">
+														<!-- hb_front -->
+														<div class="hb_front" style="background-color: #fff;">
+															<img src="assets/img/portfolioCover/bvw.png" alt=""/>
+															
+														</div><!-- End / hb_front -->
+														<!-- hb_back -->
+														<div class="hb_back" style="background-image: url();">
+															<p class="work__text" align="left">Rapid prototyping for interactive experiences in AR / VR and other emerging technologies </p>
+														</div><!-- End / hb_back -->
+														
+													</div><!-- End / hoverbox ef-slide-bottom -->
+												</a>
+												<div style=" padding:  15px; " class="bg-gray">
+													<div style="margin: 0px 0px 5px 0px">Building Virtual Worlds</div>
+													<span class="work__text" style="color: #aaa; word-wrap: break-word; text-align: left;" > Interactive Experiences in AR / VR </span>
+												</div>
+											</div><!-- End / work -->
+										</div>
+									</div>
+								</div>
 
-                    <div class="col-sm-12" style="margin-top: 30px">
-                        <div class="devider" ></div><br>
-                        <div class="row">  
-                            <ul style="font-family: Arial; font-size: 16px; ">
-                                <li ><i class="fa fa-map-marker fa-lg"></i>&nbsp&nbsp&nbsp Carnegie Mellon University</li>
-                                <br><br>
-                                <li><i class="fa fa-phone"></i>&nbsp&nbsp&nbsp (+1)412-983-0340</li>
-                                <br><br>
-                                <li><i class="fa fa-envelope"></i>&nbsp&nbsp&nbsp frao@andrew.cmu.edu</li>
-                                <br><br>
-                                <li><a href="https://www.linkedin.com/in/AAIAABdlDOcBVkOgvquUI9A2G7NQqGTGayHW5o4/"><img src = "img/linkedin.png" width="32" height="32"></a>
-                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                                <a href="https://www.facebook.com/profile.php?id=100007811490090"><img src = "img/facebook.png" width="32" height="32"></a></li>
-                                <br><br>
-                                <li><a class="btn btn-blank" href="https://drive.google.com/open?id=0B09JAT0woQITOGlfb0NFa0h0blU" target="_blank" role="button">Download Resume</a></li>
-                            </ul>                                           
-                        </div> <!-- /.row --> 
-                    </div>
-                </div> <!-- /.caption -->
-            </section>
-            <a href="#" class="scrolltotop"><i class="fa fa-arrow-up"></i></a> <!-- Scroll to top button -->
+
+								<div class="grid-item element-item UX " data-category="UX" >
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper" style="margin: 10px 10px 10px 10px;" >
+											<!-- work -->
+											<div class="work portfolio_single_content">
+												<a href="shadow.html">
+													<!-- hoverbox ef-slide-bottom -->
+													<div class="hoverbox ef-slide-bottom light">
+														<!-- hb_front -->
+														<div class="hb_front" style="background-color: #fff;">
+															<img src="assets/img/portfolioCover/shadow.png" alt=""/>
+															
+														</div><!-- End / hb_front -->
+														<!-- hb_back -->
+														<div class="hb_back" style="background-image: url());">
+															<p class="work__text" align="left">Shadow is an adventurous and puzzle game, aiming to help people cultivate a new way of thinking.</p>
+														</div><!-- End / hb_back -->
+														
+													</div><!-- End / hoverbox ef-slide-bottom -->
+												</a>
+												<div style=" padding:  15px" class="bg-gray">
+													<div style="margin: 0px 0px 5px 0px">Shadow</div>
+													<span class="work__text" style="color: #aaa; word-wrap: break-word;">An Visually Illusion Puzzle Action Platformer</span>
+												</div>
+											</div><!-- End / work -->
+										</div>
+									</div>
+								</div>
+
+								<div class="grid-item element-item UX " data-category="UX" >
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper" style="margin: 10px 10px 10px 10px;" >
+											<!-- work -->
+											<div class="work portfolio_single_content">
+												<a href="asteroids.html">
+													<!-- hoverbox ef-slide-bottom -->
+													<div class="hoverbox ef-slide-bottom light">
+														<!-- hb_front -->
+														<div class="hb_front" style="background-color: #fff;">
+															<img src="assets/img/portfolioCover/ast.png" alt=""/>
+															
+														</div><!-- End / hb_front -->
+														<!-- hb_back -->
+														<div class="hb_back" style="background-image: url();">
+															<p class="work__text" align="left">A shooting game in Arduino Nano and displayed by 8 x 8 LED matrix </p>
+														</div><!-- End / hb_back -->
+														
+													</div><!-- End / hoverbox ef-slide-bottom -->
+												</a>
+												<div style=" padding:  15px" class="bg-gray">
+													<div style="margin: 0px 0px 5px 0px">Asteroids</div>
+													<span class="work__text" style="color: #aaa; word-wrap: break-word;">Ardurino Game Displayed by 8 x 8 LED matrix</span>
+												</div>
+											</div><!-- End / work -->
+										</div>
+									</div>
+								</div>
+
+								<div class="grid-item element-item UX " data-category="UX" >
+									<div class="grid-item__inner">
+										<div class="grid-item__content-wrapper" style="margin: 10px 10px 10px 10px;" >
+											<!-- work -->
+											<div class="work portfolio_single_content">
+												<a href="graphicDesign.html">
+													<!-- hoverbox ef-slide-bottom -->
+													<div class="hoverbox ef-slide-bottom light">
+														<!-- hb_front -->
+														<div class="hb_front" style="background-color: #fff;">
+															<img src="assets/img/portfolioCover/graphic.png" alt=""/>
+															
+														</div><!-- End / hb_front -->
+														<!-- hb_back -->
+														<div class="hb_back" style="background-image: url();">
+															<span class="work__text"></span>
+														</div><!-- End / hb_back -->
+														
+													</div><!-- End / hoverbox ef-slide-bottom -->
+												</a>
+												<div style=" padding:  15px" class="bg-gray">
+													<div style="margin: 0px 0px 5px 0px">Graphic Design</div>
+													<span class="work__text" style="color: #aaa; word-wrap: break-word;">Flat Icon Design</span>
+												</div>
+											</div><!-- End / work -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</section>
+
+			
+			</div>
+			<!-- End / Content-->
+
+			<!-- footer -->
+			<div class="footer">
+				<div class="container" align="center">
+					<div class="row">
+						<div class="col-md-6 col-lg-6 ">
+							<p class="footer__coppy">2018 &copy; Designed by Feng Rao</p>
+						</div>
+						<div class="col-md-6 col-lg-6 ">
+								
+								<!-- social-icon -->
+								<a class="social-icon" href="https://www.facebook.com/profile.php?id=100007811490090"><i class="social-icon__icon fa fa-facebook"></i>
+								</a><!-- End / social-icon -->
+								
+								<!-- social-icon -->
+								<a class="social-icon" href="https://www.linkedin.com/in/feng-rao-347544ab/"><i class="social-icon__icon fa fa-linkedin"></i>
+								</a><!-- End / social-icon -->
+								
+								<!-- social-icon -->
+								<a class="social-icon" href="https://github.com/fengrao"><i class="social-icon__icon fa fa-github"></i>
+								</a><!-- End / social-icon -->
+								
+						</div>
+					</div>
+				</div>
+			</div><!-- End / footer -->
+			
 		</div>
-		        <!-- Plugins JS -->
-		<script src="inc/jquery/jquery-1.11.1.min.js"></script>
-		<script src="inc/bootstrap/js/bootstrap.min.js"></script>
-		<script src="inc/owl-carousel/js/owl.carousel.min.js"></script>
-		<script src="inc/stellar/js/jquery.stellar.min.js"></script>
-		<script src="inc/animations/js/wow.min.js"></script>
-        <script src="inc/waypoints.min.js"></script>
-		<script src="inc/isotope.pkgd.min.js"></script>
-		<script src="inc/classie.js"></script>
-		<script src="inc/jquery.easing.min.js"></script>
-		<script src="inc/jquery.counterup.min.js"></script>
-		<script src="inc/smoothscroll.js"></script>
-
-		<!-- Theme JS -->
-		<script src="js/theme.js"></script>
-    </body> 
-        
-            
+		<!-- Vendors-->
+		<script type="text/javascript" src="assets/vendors/jquery/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/imagesloaded/imagesloaded.pkgd.js"></script>
+		<script type="text/javascript" src="assets/vendors/isotope-layout/isotope.pkgd.js"></script>
+		<script type="text/javascript" src="assets/vendors/jquery-one-page/jquery.nav.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/jquery.easing/jquery.easing.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/jquery.matchHeight/jquery.matchHeight.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/magnific-popup/jquery.magnific-popup.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/masonry-layout/masonry.pkgd.js"></script>
+		<script type="text/javascript" src="assets/vendors/jquery.waypoints/jquery.waypoints.min.js"></script>
+		<script type="text/javascript" src="assets/vendors/swiper/swiper.jquery.js"></script>
+		<script type="text/javascript" src="assets/vendors/menu/menu.js"></script>
+		<script type="text/javascript" src="assets/vendors/typed/typed.min.js"></script>
+		<!-- App-->
+		<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+		<script type="text/javascript" src="assets/js/main.js"></script>
+		<script src="assets/js/isotope.pkgd.js"></script>
+		
+	</body>
 </html>
